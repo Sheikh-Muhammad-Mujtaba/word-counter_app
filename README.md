@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WordCounter App
 
-## Getting Started
+## Overview
+The **WordCounter App** is a simple text analysis tool built with **Next.js** and **React**. It allows users to analyze their text by providing a real-time word and character count and detecting the language of the text. It also includes a dark mode toggle for better UI experience.
 
-First, run the development server:
+## Features
+- **Word Count**: Calculates the total number of words entered in the input field.
+- **Character Count**: Tracks the total number of characters in the input text.
+- **Language Detection**: Detects the language of the entered text using the `franc` and `langs` libraries.
+- **Dark Mode**: Switch between light and dark themes for a more customizable user interface.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
+- **Next.js**: For the server-side rendering and framework.
+- **React**: For building the UI components.
+- **Tailwind CSS**: For styling and UI responsiveness.
+- **franc**: For language detection based on ISO 639-3 language codes.
+- **langs**: For converting ISO 639-3 language codes to human-readable language names.
+- **Dark Mode Toggle**: Custom component to switch between light and dark themes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Open the application in your browser.
+2. Enter any text in the provided input box.
+3. The app will automatically display the word count, character count, and detected language below the input field.
+4. Use the **Clear** button to reset the input field.
+5. You can switch between **light** and **dark** modes using the toggle at the bottom-right corner.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
